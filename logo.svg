@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="saegim">
+  <rect width="512" height="512" fill="#141416"/>
+  <path d="M256 112 112 344h72l72-116 72 116h72Z" fill="#f0eee9"/>
+  <rect x="112" y="372" width="288" height="36" fill="#f4511e"/>
+</svg>
