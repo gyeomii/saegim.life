@@ -23,7 +23,7 @@
     <div class="page">
       <h1>문의하기</h1>
       <p class="lead">Saegim과 서비스에 대해 궁금한 점을 남겨 주세요. 남겨 주신 이메일로 답장해요.</p>
-      <p>메일로 보내셔도 돼요: <a href="mailto:saegim@saegim.life" translate="no">saegim@saegim.life</a>. 메일 문의도 1년 안에 지우고, 요청하시면 바로 지워요.</p>
+      <p>메일로 보내셔도 돼요: <a href="mailto:saegim@saegim.life" translate="no">saegim@saegim.life</a>. 메일 문의도 1년 안에 지우고, 요청하시면 본인 확인 뒤 지워요.</p>
 
       <!-- 문의는 career 서버의 문의 기능으로 보내 운영자 화면의 「받은 문의」에 쌓임 (아래 script) -->
       <form id="contact">
@@ -45,9 +45,9 @@
           <textarea id="c-message" name="message" autocomplete="off" rows="6" maxlength="2000" required></textarea>
         </div>
         <div class="trap" aria-hidden="true">
-          <!-- 이름을 website로 두면 브라우저 자동 완성이 채워 진짜 문의가 버려질 수 있어 알아보지 못할 이름으로 (서버로는 website로 보냄) -->
+          <!-- 봇 걸러내기 칸: 채우면 서버가 버림. website 이름은 자동 완성이 채워 다른 이름 사용 (서버로는 website) -->
           <label for="c-hp">이 칸은 비워 두세요</label>
-          <input id="c-hp" name="hp_x1" tabindex="-1" autocomplete="one-time-code">
+          <input id="c-hp" name="hp_x1" tabindex="-1" autocomplete="off">
         </div>
 
         <fieldset>
@@ -60,7 +60,7 @@
             <dl>
               <div><dt>수집 항목</dt><dd>이메일, 문의 대상, 남긴 내용</dd></div>
               <div><dt>이용 목적</dt><dd>문의에 답장하고 요청을 처리하기 위해</dd></div>
-              <div><dt>보유 기간</dt><dd>남긴 날부터 1년. 그 전이라도 삭제를 요청하시면 바로 지웁니다. 장애에 대비한 백업에는 지운 뒤에도 최대 30일 남았다가 지워집니다.</dd></div>
+              <div><dt>보유 기간</dt><dd>남긴 날부터 1년. 그 전이라도 삭제를 요청하시면 본인 확인 뒤 지웁니다. 장애에 대비한 백업에는 지운 뒤에도 최대 30일 남았다가 지워집니다.</dd></div>
               <div><dt>삭제 요청</dt><dd>saegim@saegim.life로 메일을 보내 주세요. 남기신 이메일로 본인 확인 답장을 드린 뒤 지웁니다.</dd></div>
             </dl>
           </details>
